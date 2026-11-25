@@ -37,7 +37,7 @@ export function buildBrandLogoPath(version: string): string {
 }
 
 export type Branding = {
-  /** The install's own color as "#rrggbb", or null for the default violet. */
+  /** The install's own color as "#rrggbb", or null for the default iQuash cocoa. */
   brandColor: string | null;
   /** Where "Contact" should point: a page on this site, or null. */
   contactUrl: string | null;

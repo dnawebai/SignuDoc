@@ -14,7 +14,7 @@ const buttonVariants = cva(
         outline:
           "border-[var(--border-strong)] bg-[var(--paper)] text-card-foreground hover:border-[var(--secondary)] hover:bg-[var(--surface)]",
         secondary:
-          "bg-[var(--accent-soft)] text-[var(--accent-ink)] hover:bg-[#ddd8fb]",
+          "bg-[var(--accent-soft)] text-[var(--accent-ink)] hover:bg-(--accent-soft-hover)",
         ghost:
           "bg-transparent text-[var(--secondary)] hover:bg-[var(--hover)] hover:text-[var(--fg)]",
         destructive:

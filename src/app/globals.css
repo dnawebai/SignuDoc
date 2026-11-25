@@ -36,58 +36,63 @@
   --radius-2xl: calc(var(--radius) * 1.5);
   --radius-3xl: calc(var(--radius) * 1.75);
   --radius-4xl: calc(var(--radius) * 2.25);
-  --shadow-xs: 0 1px 2px rgba(28, 29, 43, 0.05);
-  --shadow-sm: 0 1px 3px rgba(28, 29, 43, 0.08);
-  --shadow: 0 2px 6px rgba(28, 29, 43, 0.05);
-  --shadow-md: 0 10px 30px rgba(28, 29, 43, 0.08);
-  --shadow-lg: 0 18px 40px rgba(28, 29, 43, 0.12);
+  --shadow-xs: 0 1px 2px rgba(68, 52, 50, 0.05);
+  --shadow-sm: 0 1px 3px rgba(68, 52, 50, 0.08);
+  --shadow: 0 2px 6px rgba(68, 52, 50, 0.05);
+  --shadow-md: 0 10px 30px rgba(68, 52, 50, 0.08);
+  --shadow-lg: 0 18px 40px rgba(68, 52, 50, 0.12);
 }
 
 /*
- * Soft Studio. A pale blue-grey page, white rounded cards that sit on it
- * without borders, one violet for anything the person can act on, and
- * status shown as tinted pills. Red is kept for errors and for actions that
- * cannot be undone.
+ * iQuash. A warm white page, white rounded cards that sit on it without
+ * borders, dark cocoa ink and one cocoa accent for anything the person can
+ * act on, and status shown as tinted pills. Red is kept for errors and for
+ * actions that cannot be undone.
+ *
+ * The values come from iQuash's design tokens (lib/design-tokens.ts in the
+ * iQuash repository): paper #fdfcfa, ink #443432, cocoa #4d3533 for the
+ * primary action, slate-600 and slate-500 for secondary text, slate-200
+ * for rules and field-border #988379 for form controls (3:1 or more).
  */
 :root {
-  --page: #f3f4f8;
-  --bg: #f3f4f8;
+  --page: #fdfcfa;
+  --bg: #fdfcfa;
   --paper: #ffffff;
   --paper-raised: #ffffff;
-  --fg: #1c1d2b;
-  --secondary: #575a6e;
-  --tertiary: #6e7183;
-  --placeholder: #8b8ea0;
+  --fg: #443432;
+  --secondary: #625856;
+  --tertiary: #706764;
+  --placeholder: #8a7e7a;
   /*
    * The accent and its shades. An install with its own color replaces all
    * of these together, from a rule the layout adds (see brand-color.ts).
    */
-  --accent: #5340d6;
-  --accent-rgb: 83 64 214;
-  --accent-hover: #4433b8;
-  --accent-soft: #ece9fd;
-  --accent-soft-hover: #e0dbfb;
-  --accent-softer: #f4f2ff;
-  --accent-ink: #4433b8;
-  --danger: #b42318;
-  --danger-hover: #912018;
-  --danger-soft: #fdebea;
-  --success: #16704a;
-  --success-soft: #e3f6ec;
-  --warning: #8a5300;
-  --warning-soft: #fdf1d8;
-  --surface: #f6f6fa;
-  --surface-strong: #e6e7ee;
+  --accent: #4d3533;
+  --accent-rgb: 77 53 51;
+  --accent-hover: #3d2927;
+  --accent-soft: #f0ece7;
+  --accent-soft-hover: #e6ddd6;
+  --accent-softer: #f5f1ee;
+  --accent-ink: #4d3533;
+  --danger: #b91c1c;
+  --danger-hover: #991b1b;
+  --danger-soft: #fbe7e9;
+  --success: #13774a;
+  --success-soft: #dcf3e4;
+  --warning: #8a5b0d;
+  --warning-soft: #f7e7c4;
+  --surface: #f5f1ee;
+  --surface-strong: #ede8e5;
   --shell-surface: #ffffff;
-  --border: #e6e7ee;
-  --border-strong: #cfd0dc;
-  --border-hover: #b4b6c6;
-  --hover: rgba(28, 29, 43, 0.05);
-  --shell-wash: #f3f4f8;
-  --canvas-wash: #e9eaf1;
-  --shadow-soft: 0 18px 40px rgba(28, 29, 43, 0.12);
-  --shadow-card: 0 2px 6px rgba(28, 29, 43, 0.04);
-  --shadow-lift: 0 10px 30px rgba(28, 29, 43, 0.08);
+  --border: #ede8e5;
+  --border-strong: #988379;
+  --border-hover: #7d6a62;
+  --hover: rgba(68, 52, 50, 0.05);
+  --shell-wash: #fdfcfa;
+  --canvas-wash: #f0ece7;
+  --shadow-soft: 0 18px 40px rgba(68, 52, 50, 0.12);
+  --shadow-card: 0 2px 6px rgba(68, 52, 50, 0.04);
+  --shadow-lift: 0 10px 30px rgba(68, 52, 50, 0.08);
   --signer-1: #2563eb;
   --signer-1-tint: rgba(37, 99, 235, 0.12);
   --signer-2: #9333ea;
@@ -120,7 +125,7 @@
     background: var(--page);
     color: var(--fg);
     font-family:
-      var(--font-ui), "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+      var(--font-ui), "DM Sans", ui-sans-serif, system-ui, sans-serif;
     letter-spacing: -0.005em;
     text-rendering: optimizeLegibility;
   }
@@ -151,7 +156,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     cursor: pointer;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23575a6e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23625856' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 0.875rem center;
     background-size: 1rem 1rem;
@@ -175,8 +180,9 @@
     background: rgb(var(--accent-rgb) / 0.18);
   }
 
+  /* Solid, so the ring keeps 3:1 or more against the page. */
   :focus-visible {
-    outline: 2px solid rgb(var(--accent-rgb) / 0.55);
+    outline: 2px solid var(--accent);
     outline-offset: 2px;
   }
 
@@ -218,9 +224,13 @@
 }
 
 @layer components {
-  /* A white card on the page. The main container on every screen. */
+  /*
+   * A white card on the page. The main container on every screen. White on
+   * the warm page is a small step, so a hairline rule marks its edge.
+   */
   .panel {
     position: relative;
+    border: 1px solid var(--border);
     border-radius: 1.5rem;
     background: var(--paper);
   }
@@ -286,7 +296,7 @@
   }
 
   .pill-neutral {
-    background: #eeeff4;
+    background: var(--surface-strong);
     color: var(--secondary);
   }
 
@@ -328,7 +338,7 @@
   .segmented-item[data-active="true"] {
     background: var(--paper);
     color: var(--fg);
-    box-shadow: 0 1px 3px rgba(28, 29, 43, 0.12);
+    box-shadow: 0 1px 3px rgba(68, 52, 50, 0.12);
   }
 
   /* A text field drawn without the Input component. */
@@ -350,7 +360,7 @@
 
   /* .field-input's background shorthand clears the chevron, so add it back. */
   select.field-input {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23575a6e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23625856' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 0.875rem center;
     background-size: 1rem 1rem;
@@ -451,7 +461,7 @@
   [data-paper-grid] {
     background-color: var(--canvas-wash);
     background-image: radial-gradient(
-      rgba(28, 29, 43, 0.07) 1px,
+      rgba(68, 52, 50, 0.07) 1px,
       transparent 1px
     );
     background-position: center center;

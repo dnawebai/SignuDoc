@@ -67,7 +67,7 @@ test("every palette is readable, whatever color it starts from", () => {
     // Brand-colored text on white, on the page and on the tints.
     for (const background of [
       "#ffffff",
-      "#f3f4f8",
+      "#fdfcfa",
       palette.accentSoft,
       palette.accentSofter,
       palette.accentSoftHover,

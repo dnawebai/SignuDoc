@@ -1144,7 +1144,7 @@ function PrepareLiveShellContent({
                 className={`mx-auto ${zoomLevel > DEFAULT_DOCUMENT_ZOOM_LEVEL ? "w-full" : "flex justify-center"}`}
               >
                 <div
-                  className="relative overflow-hidden rounded-md bg-white shadow-[0_1px_2px_rgba(28,29,43,0.08),0_12px_32px_rgba(28,29,43,0.12)]"
+                  className="relative overflow-hidden rounded-md bg-white shadow-[0_1px_2px_rgba(68,52,50,0.08),0_12px_32px_rgba(68,52,50,0.12)]"
                   style={{
                     width: `${zoomLevel * 100}%`,
                   }}
@@ -1444,7 +1444,7 @@ function MobileFieldToolsSheet({
     <div className="fixed inset-0 z-40 lg:hidden">
       <button
         aria-label="Close field tools"
-        className="absolute inset-0 bg-[rgba(28,29,43,0.32)]"
+        className="absolute inset-0 bg-[rgba(68,52,50,0.32)]"
         onClick={onClose}
         tabIndex={-1}
         type="button"
@@ -1452,7 +1452,7 @@ function MobileFieldToolsSheet({
       <div
         aria-label="Field tools"
         aria-modal="true"
-        className="absolute inset-x-0 bottom-0 flex max-h-[calc(100dvh-1rem)] flex-col rounded-t-[1.75rem] bg-white pt-5 shadow-[0_-24px_60px_rgba(28,29,43,0.18)]"
+        className="absolute inset-x-0 bottom-0 flex max-h-[calc(100dvh-1rem)] flex-col rounded-t-[1.75rem] bg-white pt-5 shadow-[0_-24px_60px_rgba(68,52,50,0.18)]"
         ref={sheetRef}
         role="dialog"
       >

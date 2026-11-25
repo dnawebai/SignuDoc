@@ -238,7 +238,7 @@ function UploadShellLayout({
                   // eslint-disable-next-line @next/next/no-img-element
                   <img
                     alt=""
-                    className="max-h-full max-w-full rounded-[0.375rem] bg-white shadow-[0_1px_2px_rgba(28,29,43,0.08),0_4px_10px_rgba(28,29,43,0.10)] ring-1 ring-[rgba(28,29,43,0.06)]"
+                    className="max-h-full max-w-full rounded-[0.375rem] bg-white shadow-[0_1px_2px_rgba(68,52,50,0.08),0_4px_10px_rgba(68,52,50,0.10)] ring-1 ring-[rgba(68,52,50,0.06)]"
                     src={previewUrl}
                   />
                 ) : (

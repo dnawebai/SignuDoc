@@ -1021,7 +1021,7 @@ export function SigningLiveShell({
 
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="sticky top-0 z-20 bg-[rgba(243,244,248,0.88)] backdrop-blur-md">
+      <header className="sticky top-0 z-20 bg-[rgba(253,252,250,0.88)] backdrop-blur-md">
         <div className="mx-auto flex w-full max-w-[1320px] items-center justify-between gap-4 px-4 py-3 sm:px-6 sm:py-4">
           <div className="flex min-w-0 items-center gap-5">
             <Brand href="/" />
@@ -1166,7 +1166,7 @@ export function SigningLiveShell({
                   }`}
                 >
                   <div
-                    className="relative overflow-hidden rounded-md bg-white shadow-[0_1px_2px_rgba(28,29,43,0.08),0_12px_32px_rgba(28,29,43,0.12)]"
+                    className="relative overflow-hidden rounded-md bg-white shadow-[0_1px_2px_rgba(68,52,50,0.08),0_12px_32px_rgba(68,52,50,0.12)]"
                     style={{
                       width: `${zoomLevel * 100}%`,
                     }}
@@ -1980,7 +1980,7 @@ function VisibleFieldStamp({ field }: { field: SigningVisibleField }) {
   if (field.type === "radio") {
     return (
       <div
-        className="pointer-events-none absolute z-1 flex items-center justify-center rounded-full border border-(--border-strong) bg-[rgba(28,29,43,0.03)]"
+        className="pointer-events-none absolute z-1 flex items-center justify-center rounded-full border border-(--border-strong) bg-[rgba(68,52,50,0.03)]"
         data-signing-field="true"
         style={frame}
       >
@@ -1997,7 +1997,7 @@ function VisibleFieldStamp({ field }: { field: SigningVisibleField }) {
   if (field.type === "checkbox") {
     return (
       <div
-        className="pointer-events-none absolute z-1 flex items-center justify-center rounded-[0.25rem] border border-(--border-strong) bg-[rgba(28,29,43,0.03)]"
+        className="pointer-events-none absolute z-1 flex items-center justify-center rounded-[0.25rem] border border-(--border-strong) bg-[rgba(68,52,50,0.03)]"
         data-signing-field="true"
         style={frame}
       >
@@ -2027,7 +2027,7 @@ function VisibleFieldStamp({ field }: { field: SigningVisibleField }) {
   ) {
     return (
       <div
-        className="pointer-events-none absolute z-1 overflow-hidden rounded-[0.375rem] border border-(--border-strong) bg-[rgba(28,29,43,0.03)]"
+        className="pointer-events-none absolute z-1 overflow-hidden rounded-[0.375rem] border border-(--border-strong) bg-[rgba(68,52,50,0.03)]"
         data-signing-field="true"
         style={frame}
       >
@@ -2044,7 +2044,7 @@ function VisibleFieldStamp({ field }: { field: SigningVisibleField }) {
 
   return (
     <div
-      className="pointer-events-none absolute z-1 overflow-hidden rounded-[0.375rem] border border-(--border-strong) bg-[rgba(28,29,43,0.03)] text-(--secondary)"
+      className="pointer-events-none absolute z-1 overflow-hidden rounded-[0.375rem] border border-(--border-strong) bg-[rgba(68,52,50,0.03)] text-(--secondary)"
       data-signing-field="true"
       style={frame}
     >
@@ -2154,13 +2154,13 @@ function SignatureModal({
       >
         <TabsList className="segmented flex h-auto w-full p-1 group-data-horizontal/tabs:h-auto">
           <TabsTrigger
-            className="segmented-item h-auto min-h-10 flex-1 data-active:bg-white data-active:text-(--fg) data-active:shadow-[0_1px_3px_rgba(28,29,43,0.12)] after:hidden"
+            className="segmented-item h-auto min-h-10 flex-1 data-active:bg-white data-active:text-(--fg) data-active:shadow-[0_1px_3px_rgba(68,52,50,0.12)] after:hidden"
             value="typed"
           >
             Type
           </TabsTrigger>
           <TabsTrigger
-            className="segmented-item h-auto min-h-10 flex-1 data-active:bg-white data-active:text-(--fg) data-active:shadow-[0_1px_3px_rgba(28,29,43,0.12)] after:hidden"
+            className="segmented-item h-auto min-h-10 flex-1 data-active:bg-white data-active:text-(--fg) data-active:shadow-[0_1px_3px_rgba(68,52,50,0.12)] after:hidden"
             value="drawn"
           >
             Draw

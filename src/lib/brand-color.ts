@@ -19,17 +19,20 @@ export type BrandPalette = {
   accentSofter: string;
 };
 
-/** The accent the design ships with. Keep in step with globals.css. */
-export const DEFAULT_BRAND_COLOR = "#5340d6";
+/**
+ * The accent the design ships with: iQuash's cocoa. Keep in step with
+ * globals.css.
+ */
+export const DEFAULT_BRAND_COLOR = "#4d3533";
 
 export const DEFAULT_BRAND_PALETTE: BrandPalette = {
   accent: DEFAULT_BRAND_COLOR,
-  accentHover: "#4433b8",
-  accentInk: "#4433b8",
-  accentRgb: "83 64 214",
-  accentSoft: "#ece9fd",
-  accentSoftHover: "#e0dbfb",
-  accentSofter: "#f4f2ff",
+  accentHover: "#3d2927",
+  accentInk: "#4d3533",
+  accentRgb: "77 53 51",
+  accentSoft: "#f0ece7",
+  accentSoftHover: "#e6ddd6",
+  accentSofter: "#f5f1ee",
 };
 
 type Rgb = [red: number, green: number, blue: number];
