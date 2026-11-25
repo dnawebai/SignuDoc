@@ -1,3 +1,5 @@
+> **This fork is iQuash Sign.** It is iQuash's e-signature app, built on SignuDoc, to run at `sign.iquash.com`. It carries the iQuash name, logo and colours; the code and the MIT License are SignuDoc's. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). The rest of this README is SignuDoc's own.
+
 <p align="center">
   <img src="docs/images/banner.png" alt="SignuDoc: e-signatures you actually own. Open source and MIT licensed. Send, sign and seal documents from your own Vercel account, at $0 per seat. Shown: a signer drawing a signature on a consulting agreement, and both signers marked Signed.">
 </p>
