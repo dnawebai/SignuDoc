@@ -1,0 +1,21 @@
+{
+  "version": "20261112-iquash-official-v1",
+  "approved": "2026-11-12",
+  "master": {
+    "file": "master.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "04024760b5784a86ddd674da627872724c288937358abdfacc176476da1ba5f6"
+  },
+  "portrait": "identity.webp",
+  "icons": [
+    "icon-32.png",
+    "icon-48.png",
+    "icon-180.png",
+    "icon-192.png",
+    "icon-512.png",
+    "icon-1024.png"
+  ],
+  "maskable": "icon-maskable-512.png",
+  "note": "Owner-approved static identity; not a render or replacement of the animated character mesh."
+}

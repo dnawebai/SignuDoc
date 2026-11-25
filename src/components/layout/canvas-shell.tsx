@@ -36,7 +36,7 @@ export function CanvasShell({
 
   return (
     <div className="min-h-screen bg-(--page)">
-      <header className="sticky top-0 z-20 bg-[rgba(255,255,255,0.92)] shadow-[0_1px_0_rgba(28,29,43,0.06)] backdrop-blur-md">
+      <header className="sticky top-0 z-20 bg-[rgba(255,255,255,0.92)] shadow-[0_1px_0_rgba(68,52,50,0.06)] backdrop-blur-md">
         <div className="flex min-h-[4.5rem] items-center justify-between gap-3 px-4 py-3 sm:px-6">
           <Link
             className="btn-quiet min-h-11 px-3.5"

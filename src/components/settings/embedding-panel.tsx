@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-// The sites allowed to show SignuDoc's signing page inside their own pages
+// The sites allowed to show iQuash Sign's signing page inside their own pages
 // (embedded signing, through the API). Administrators only.
 
 const GENERIC_ERROR_MESSAGE = "Something went wrong. Please try again.";
@@ -123,7 +123,7 @@ export function EmbeddingPanel() {
           </a>
           . No invitations are emailed for those: the app signs the person in
           and says who they are, so list only sites you trust. Every other page
-          of SignuDoc stays impossible to frame.
+          of iQuash Sign stays impossible to frame.
         </p>
       </div>
 

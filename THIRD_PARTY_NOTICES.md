@@ -1,5 +1,22 @@
 # Third-Party Notices
 
+## iQuash Sign and SignuDoc
+
+iQuash Sign is based on SignuDoc (MIT), © its authors.
+
+SignuDoc's copyright notice and the MIT License are kept, unchanged, in
+`LICENSE`, and apply to the code in this repository. Copyright (c) 2026
+Nyllon Software.
+
+The iQuash name, the iQuash logo and the Quash character are iQuash's own
+brand assets. They are not covered by the MIT License. They are kept under
+`public/brand/` and in `src/app/icon.svg`, `src/app/apple-icon.png` and
+`src/app/opengraph-image.png`.
+
+The interface font, DM Sans (SIL Open Font License 1.1), is downloaded at
+build time by `next/font` and served from this site. It is not stored in the
+repository.
+
 SignuDoc includes bundled third-party assets that remain under their own
 licenses. The project license applies to SignuDoc's code, but it does not
 replace the licenses for redistributed third-party files.

@@ -18,6 +18,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { authClient } from "@/lib/auth/client";
+import { IQUASH_NAME, IQUASH_URL } from "@/lib/branding";
 import { cn } from "@/lib/cn";
 import { getInitials } from "@/lib/initials";
 
@@ -67,7 +68,7 @@ export function AppShell({
 
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="sticky top-0 z-30 bg-[rgba(243,244,248,0.86)] backdrop-blur-md">
+      <header className="sticky top-0 z-30 bg-[rgba(253,252,250,0.86)] backdrop-blur-md">
         <div className="page-width flex flex-wrap items-center justify-between gap-x-6 gap-y-2 py-3 sm:py-4">
           <div className="flex min-w-0 items-center gap-7">
             <Brand href="/" />
@@ -89,7 +90,7 @@ export function AppShell({
             <DropdownMenuTrigger asChild>
               <button
                 aria-label={`Account menu for ${user.name}`}
-                className="inline-flex size-10 shrink-0 items-center justify-center rounded-full bg-[#ffd9c2] text-[0.8125rem] font-bold text-[#7a3412] transition hover:ring-4 hover:ring-[rgba(28,29,43,0.06)]"
+                className="inline-flex size-10 shrink-0 items-center justify-center rounded-full bg-(--accent-soft) text-[0.8125rem] font-bold text-(--accent-ink) transition hover:ring-4 hover:ring-[rgba(68,52,50,0.06)]"
                 type="button"
               >
                 {initials}
@@ -165,6 +166,17 @@ export function AppShell({
           {children}
         </div>
       </main>
+
+      <footer className="page-width pb-8 text-center">
+        <a
+          className="text-[0.8125rem] font-medium text-(--tertiary) transition-colors hover:text-(--accent-ink)"
+          href={IQUASH_URL}
+          rel="noreferrer"
+          target="_blank"
+        >
+          Part of {IQUASH_NAME}
+        </a>
+      </footer>
     </div>
   );
 }

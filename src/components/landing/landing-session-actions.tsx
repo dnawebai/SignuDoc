@@ -8,7 +8,7 @@ import { cn } from "@/lib/cn";
 
 type LandingSessionActionProps = {
   className?: string;
-  /** "inverse" is for a button that sits on the violet closing panel. */
+  /** "inverse" is for a button that sits on the cocoa closing panel. */
   tone?: "default" | "inverse";
 };
 

@@ -66,7 +66,7 @@ export function LandingDashboardPreview() {
   return (
     <div
       aria-hidden="true"
-      className="overflow-hidden rounded-[1.75rem] bg-(--page) shadow-(--shadow-soft) ring-1 ring-[rgba(28,29,43,0.06)]"
+      className="overflow-hidden rounded-[1.75rem] bg-(--page) shadow-(--shadow-soft) ring-1 ring-[rgba(68,52,50,0.06)]"
     >
       <div className="max-h-[46rem] overflow-hidden px-4 pb-6 sm:px-7">
         <div className="flex items-center justify-between gap-4 py-4">
@@ -88,7 +88,7 @@ export function LandingDashboardPreview() {
               ))}
             </div>
           </div>
-          <span className="inline-flex size-10 shrink-0 items-center justify-center rounded-full bg-[#ffd9c2] text-[0.8125rem] font-bold text-[#7a3412]">
+          <span className="inline-flex size-10 shrink-0 items-center justify-center rounded-full bg-(--accent-soft) text-[0.8125rem] font-bold text-(--accent-ink)">
             {previewUser.initials}
           </span>
         </div>

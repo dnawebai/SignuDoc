@@ -105,7 +105,7 @@ export function DocumentThumbnail({
   }
 
   const frameClassName = cn(
-    "block h-full w-auto max-w-full rounded-[0.5rem] bg-white object-contain shadow-[0_1px_2px_rgba(28,29,43,0.08),0_6px_16px_rgba(28,29,43,0.10)] ring-1 ring-[rgba(28,29,43,0.06)]",
+    "block h-full w-auto max-w-full rounded-[0.5rem] bg-white object-contain shadow-[0_1px_2px_rgba(68,52,50,0.08),0_6px_16px_rgba(68,52,50,0.10)] ring-1 ring-[rgba(68,52,50,0.06)]",
     className,
   );
 
@@ -180,19 +180,19 @@ function PagePlaceholder({
     <span
       aria-hidden="true"
       className={cn(
-        "flex aspect-[17/22] h-full flex-col gap-[7%] rounded-[0.5rem] bg-white px-[12%] py-[14%] shadow-[0_1px_2px_rgba(28,29,43,0.08),0_6px_16px_rgba(28,29,43,0.10)] ring-1 ring-[rgba(28,29,43,0.06)]",
+        "flex aspect-[17/22] h-full flex-col gap-[7%] rounded-[0.5rem] bg-white px-[12%] py-[14%] shadow-[0_1px_2px_rgba(68,52,50,0.08),0_6px_16px_rgba(68,52,50,0.10)] ring-1 ring-[rgba(68,52,50,0.06)]",
         className,
       )}
     >
       <span
         className={cn(
-          "h-[4%] w-3/5 rounded-full bg-[#cfd0dc]",
+          "h-[4%] w-3/5 rounded-full bg-[#d8cfc9]",
           layout.centered && "self-center",
         )}
       />
       {layout.lines.map((width, index) => (
         <span
-          className={cn("h-[3%] rounded-full bg-[#e3e4ec]", width)}
+          className={cn("h-[3%] rounded-full bg-[#ede8e5]", width)}
           key={index}
         />
       ))}
@@ -261,10 +261,10 @@ const SAMPLE_PAGE_HEIGHT = 220;
 
 const sampleMarkFills: Record<SampleMark["tone"], string> = {
   accent: "var(--accent)",
-  body: "#cdcfda",
-  heading: "#7d8094",
-  rule: "#e1e2ea",
-  title: "#3b3d4f",
+  body: "#d8cfc9",
+  heading: "#988379",
+  rule: "#ede8e5",
+  title: "#443432",
 };
 
 function layoutSamplePage(sample: SamplePage): SampleMark[] {
@@ -355,7 +355,7 @@ export function SampleDocumentPage({
     <svg
       aria-hidden="true"
       className={cn(
-        "block h-full w-auto max-w-full rounded-[0.5rem] bg-white shadow-[0_1px_2px_rgba(28,29,43,0.08),0_6px_16px_rgba(28,29,43,0.10)] ring-1 ring-[rgba(28,29,43,0.06)]",
+        "block h-full w-auto max-w-full rounded-[0.5rem] bg-white shadow-[0_1px_2px_rgba(68,52,50,0.08),0_6px_16px_rgba(68,52,50,0.10)] ring-1 ring-[rgba(68,52,50,0.06)]",
         className,
       )}
       viewBox={`0 0 ${String(SAMPLE_PAGE_WIDTH)} ${String(SAMPLE_PAGE_HEIGHT)}`}

@@ -2859,7 +2859,7 @@ export async function sendDraftEnvelope(
 
   if (hasApprovers && signatureLevel !== "simple") {
     throw new EnvelopeMutationError(
-      "Approvers work with SignuDoc signatures only. Send with simple signatures, or make the approvers signers.",
+      "Approvers work with iQuash Sign signatures only. Send with simple signatures, or make the approvers signers.",
       400,
     );
   }

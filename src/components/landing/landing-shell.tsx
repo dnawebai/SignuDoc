@@ -76,7 +76,7 @@ const comparisonRows: readonly ComparisonRow[] = [
 
 const faqItems: readonly FaqItem[] = [
   {
-    question: "Do signers need a SignuDoc account?",
+    question: "Do signers need an iQuash Sign account?",
     answer:
       "Nope. You sign in to send documents, but your signers just click a link and sign. No account, no friction.",
   },
@@ -134,7 +134,7 @@ const sectionLeadClassName =
 export function LandingShell() {
   return (
     <div className="flex min-h-screen flex-col text-(--fg)">
-      <header className="sticky top-0 z-30 bg-[rgba(243,244,248,0.86)] backdrop-blur-md">
+      <header className="sticky top-0 z-30 bg-[rgba(253,252,250,0.86)] backdrop-blur-md">
         <div className="page-width flex items-center justify-between gap-3 py-3 sm:py-4">
           <Brand href="/" />
 
@@ -318,6 +318,7 @@ export function LandingShell() {
         <section className="page-width pb-10 pt-6 lg:pb-14">
           <div className="rounded-[2rem] bg-(--accent) px-6 py-14 text-center sm:px-10 lg:py-20">
             <div className="mx-auto max-w-[44rem]">
+              <BrandMark className="mx-auto mb-5 size-16" tone="inverse" />
               <p className="text-sm font-semibold text-white/80">Start free</p>
               <h2 className="mt-3 text-[clamp(2rem,4.5vw,3.25rem)] font-extrabold leading-[1.06] tracking-[-0.04em] text-white">
                 Send your next agreement. On us.
@@ -390,7 +391,7 @@ function ComparisonTable() {
               <th className="w-[32%] rounded-t-2xl bg-(--accent-softer) px-5 py-4 text-center">
                 <span className="inline-flex items-center gap-2 text-[1.0625rem] font-extrabold tracking-[-0.02em] text-(--fg)">
                   <BrandMark className="size-6 rounded-[0.5rem]" />
-                  SignuDoc
+                  iQuash Sign
                 </span>
               </th>
               <th className="w-[32%] px-5 py-4 text-center">
@@ -432,7 +433,7 @@ function ComparisonTable() {
             </p>
             <ComparisonMobileRow
               advantage
-              label="SignuDoc"
+              label="iQuash Sign"
               value={row.signudoc}
             />
             <ComparisonMobileRow label="Per-seat plans" value={row.perSeat} />

@@ -59,10 +59,10 @@ export function UpdatesPanel({
         <div className="space-y-2">
           <p className="section-eyebrow">Administrator</p>
           <h2 className="text-2xl font-extrabold tracking-[-0.03em] text-(--fg)">
-            SignuDoc
+            iQuash Sign
           </h2>
           <p className="max-w-2xl text-sm leading-6 text-(--secondary)">
-            This site runs SignuDoc version{" "}
+            This site runs iQuash Sign, built on SignuDoc version{" "}
             <span
               className="font-bold text-(--fg)"
               data-testid="running-version"
