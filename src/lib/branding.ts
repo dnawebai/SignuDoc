@@ -5,14 +5,18 @@ import type { ResolvedSettings } from "./settings.ts";
 //
 // A neutral install (the default) carries the name of the organization that
 // runs it, links to that organization's own terms and privacy policy, and
-// says "Powered by SignuDoc" in the footer. Hosted mode (HOSTED_MODE=1) is
-// SignuDoc run as a public service: its own name, landing page and legal
-// pages. An install's own logo and color are not used there.
+// says "Powered by iQuash Sign" in the footer. Hosted mode (HOSTED_MODE=1)
+// is iQuash Sign run as a public service: its own name, landing page and
+// legal pages. An install's own logo and color are not used there.
+//
+// iQuash Sign is iQuash's build of SignuDoc (MIT). The internal names
+// (SIGNUDOC_*, env variables, database objects) keep the upstream spelling
+// so updates from SignuDoc still apply cleanly.
 
-export const SIGNUDOC_NAME = "SignuDoc";
-// The project's home is its repository. There is no SignuDoc-run site that
-// an install should send its visitors to, and no address there to write to.
-export const SIGNUDOC_URL = "https://github.com/NYLLON-SOFTWARE/SignuDoc";
+export const SIGNUDOC_NAME = "iQuash Sign";
+/** The product family iQuash Sign belongs to. Linked from every footer. */
+export const IQUASH_NAME = "iQuash";
+export const IQUASH_URL = "https://iquash.com";
 
 /** Where the install's logo is served. Public: it is shown to signers. */
 export const BRAND_LOGO_PATH = "/api/brand/logo";
@@ -54,7 +58,7 @@ export type Branding = {
   termsUrl: string | null;
 };
 
-/** SignuDoc under its own name. Also what a page shows before it knows better. */
+/** iQuash Sign under its own name. Also what a page shows before it knows better. */
 export const HOSTED_BRANDING: Branding = {
   brandColor: null,
   contactUrl: "/contact",

@@ -81,7 +81,7 @@ function describeSignatureLevel(level: SignatureLevel, providerName: string) {
     case "qualified":
       return `Qualified electronic signatures through ${providerName}`;
     default:
-      return "SignuDoc signatures";
+      return "iQuash Sign signatures";
   }
 }
 
@@ -489,7 +489,7 @@ export function ReviewShell({
                   <p className="notice notice-danger mt-3" role="alert">
                     These signatures are added one after another, so signers
                     cannot sign at the same time. Give each signer their own
-                    step, or choose SignuDoc signatures.
+                    step, or choose iQuash Sign signatures.
                   </p>
                 ) : null}
               </div>

@@ -216,7 +216,7 @@ export function ApiKeysPanel() {
             rel="noreferrer"
             target="_blank"
           >
-            SignuDoc API
+            iQuash Sign API
           </a>
           . A key acts as the administrator who made it: what it sends shows in
           their documents. Keys skip two-step sign-in, so keep them in the

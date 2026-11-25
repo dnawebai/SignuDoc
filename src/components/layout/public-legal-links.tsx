@@ -3,7 +3,7 @@
 import Link from "next/link";
 
 import { useBranding } from "@/components/layout/branding-provider";
-import { SIGNUDOC_NAME, SIGNUDOC_URL } from "@/lib/branding";
+import { IQUASH_NAME, IQUASH_URL, SIGNUDOC_NAME } from "@/lib/branding";
 import { PUBLIC_COPYRIGHT_YEAR, publicFooterLinks } from "@/lib/legal";
 import { cn } from "@/lib/cn";
 import { PERMITTED_USE_PATH } from "@/lib/permitted-uses";
@@ -108,16 +108,23 @@ export function PublicLegalFooter({
             </nav>
           ) : null}
 
-          {branding.hosted ? null : (
+          {/* iQuash Sign is one of iQuash's products, on every install. */}
+          <p className="flex flex-wrap items-center justify-center gap-x-2 text-[0.8125rem] text-(--tertiary)">
+            {branding.hosted ? null : (
+              <>
+                <span>Powered by {SIGNUDOC_NAME}</span>
+                <span aria-hidden="true">·</span>
+              </>
+            )}
             <a
               className={resolvedLinkClassName}
-              href={SIGNUDOC_URL}
+              href={IQUASH_URL}
               rel="noreferrer"
               target="_blank"
             >
-              Powered by {SIGNUDOC_NAME}
+              Part of {IQUASH_NAME}
             </a>
-          )}
+          </p>
         </div>
       </div>
     </footer>
