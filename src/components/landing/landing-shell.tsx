@@ -318,6 +318,7 @@ export function LandingShell() {
         <section className="page-width pb-10 pt-6 lg:pb-14">
           <div className="rounded-[2rem] bg-(--accent) px-6 py-14 text-center sm:px-10 lg:py-20">
             <div className="mx-auto max-w-[44rem]">
+              <BrandMark className="mx-auto mb-5 size-16" tone="inverse" />
               <p className="text-sm font-semibold text-white/80">Start free</p>
               <h2 className="mt-3 text-[clamp(2rem,4.5vw,3.25rem)] font-extrabold leading-[1.06] tracking-[-0.04em] text-white">
                 Send your next agreement. On us.

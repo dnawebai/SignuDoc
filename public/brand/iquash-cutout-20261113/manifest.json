@@ -1,0 +1,23 @@
+{
+  "version": "20261113-iquash-cutout-v3",
+  "finish": "white pearl",
+  "background": "transparent identity; white install tiles",
+  "requested": "2026-11-12",
+  "master": {
+    "file": "master.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "4489ef2ad36619972b0e4795426d6a56cc4121851e92983cdf71cc2957cfa23f"
+  },
+  "portrait": "identity.webp",
+  "icons": [
+    "icon-32.png",
+    "icon-48.png",
+    "icon-180.png",
+    "icon-192.png",
+    "icon-512.png",
+    "icon-1024.png"
+  ],
+  "maskable": "icon-maskable-512.png",
+  "note": "Background removed at owner request. Website identity and favicon have alpha; app and maskable icons use white, never purple."
+}

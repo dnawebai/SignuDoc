@@ -3,7 +3,14 @@
 import Link from "next/link";
 
 import { useBranding } from "@/components/layout/branding-provider";
+import { IQUASH_NAME, SIGNUDOC_NAME } from "@/lib/branding";
 import { cn } from "@/lib/cn";
+
+// iQuash's official identity (public/brand/iquash-official-20261112), on its
+// own navy tile, for light backgrounds. The white pearl cut-out
+// (public/brand/iquash-cutout-20261113) has no tile and is for dark ones.
+const OFFICIAL_MARK = "/brand/iquash-official-20261112";
+const CUTOUT_MARK = "/brand/iquash-cutout-20261113";
 
 type BrandProps = {
   className?: string;
@@ -51,7 +58,15 @@ export function Brand({
             labelClassName,
           )}
         >
-          {productName}
+          {productName === SIGNUDOC_NAME ? (
+            // The iQuash wordmark, then the product: "iQuash Sign".
+            <>
+              {IQUASH_NAME}{" "}
+              <span className="font-medium text-(--secondary)">Sign</span>
+            </>
+          ) : (
+            productName
+          )}
         </span>
       ) : null}
     </Link>
@@ -85,28 +100,41 @@ export function BrandLogo({
   );
 }
 
-/** The signature stroke on a tile in the accent color. Decorative: the link carries the name. */
-export function BrandMark({ className = "" }: { className?: string }) {
+/**
+ * The iQuash mark. Decorative: the link next to it carries the name.
+ * `inverse` is the white cut-out, for dark backgrounds.
+ */
+export function BrandMark({
+  className = "",
+  tone = "default",
+}: {
+  className?: string;
+  tone?: "default" | "inverse";
+}) {
+  const inverse = tone === "inverse";
+
   return (
-    <span
+    // A small static file from public/: next/image would only add a resize
+    // step for an image that is already the right size.
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      alt=""
       aria-hidden="true"
-      className={cn(
-        "inline-flex size-7 shrink-0 items-center justify-center rounded-[0.5625rem] bg-(--accent)",
-        className,
-      )}
-    >
-      <svg
-        fill="none"
-        height="16"
-        stroke="#fff"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2.4"
-        viewBox="0 0 24 24"
-        width="16"
-      >
-        <path d="M4 16c3 0 4-8 7-8s2 7 5 7 2-3 4-3" />
-      </svg>
-    </span>
+      className={cn("block size-8 shrink-0 object-contain", className)}
+      decoding="async"
+      draggable={false}
+      height={32}
+      src={
+        inverse
+          ? `${CUTOUT_MARK}/identity-128.webp`
+          : `${OFFICIAL_MARK}/icon-48.png`
+      }
+      srcSet={
+        inverse
+          ? `${CUTOUT_MARK}/identity-128.webp 1x, ${CUTOUT_MARK}/identity-320.webp 3x`
+          : `${OFFICIAL_MARK}/icon-48.png 1x, ${OFFICIAL_MARK}/icon-96.png 2x, ${OFFICIAL_MARK}/icon-192.png 4x`
+      }
+      width={32}
+    />
   );
 }
