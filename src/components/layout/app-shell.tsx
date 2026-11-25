@@ -18,6 +18,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { authClient } from "@/lib/auth/client";
+import { IQUASH_NAME, IQUASH_URL } from "@/lib/branding";
 import { cn } from "@/lib/cn";
 import { getInitials } from "@/lib/initials";
 
@@ -165,6 +166,17 @@ export function AppShell({
           {children}
         </div>
       </main>
+
+      <footer className="page-width pb-8 text-center">
+        <a
+          className="text-[0.8125rem] font-medium text-(--tertiary) transition-colors hover:text-(--accent-ink)"
+          href={IQUASH_URL}
+          rel="noreferrer"
+          target="_blank"
+        >
+          Part of {IQUASH_NAME}
+        </a>
+      </footer>
     </div>
   );
 }
